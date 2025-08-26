@@ -1,0 +1,171 @@
+annotated-types==0.7.0
+anyio==4.9.0
+argon2-cffi==23.1.0
+argon2-cffi-bindings==21.2.0
+arrow==1.3.0
+asttokens==2.4.1
+async-lru==2.0.4
+attrs==24.2.0
+babel==2.16.0
+beautifulsoup4==4.4.1
+bleach==6.1.0
+Bottleneck @ file:///croot/bottleneck_1731058641041/work
+Brotli @ file:///croot/brotli-split_1736182456865/work
+cachetools==5.5.2
+certifi==2024.8.30
+cffi==1.17.1
+charset-normalizer==3.3.2
+click==8.1.7
+comm==0.2.2
+contourpy @ file:///croot/contourpy_1738160616259/work
+cramjam @ file:///croot/cramjam_1742392787230/work
+cryptography==44.0.2
+cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+Cython==3.0.12
+debugpy==1.8.6
+decorator==5.1.1
+defusedxml==0.7.1
+distro==1.9.0
+exceptiongroup==1.2.2
+executing==2.1.0
+fastjsonschema==2.20.0
+fastparquet @ file:///croot/fastparquet_1743512639603/work
+filelock==3.18.0
+fonttools @ file:///croot/fonttools_1737039080035/work
+fqdn==1.5.1
+fsspec @ file:///croot/fsspec_1736274672181/work
+gensim==4.3.3
+google==3.0.0
+google-ai-generativelanguage==0.6.15
+google-api-core==2.24.2
+google-api-python-client==2.170.0
+google-auth==2.40.1
+google-auth-httplib2==0.2.0
+google-genai==1.15.0
+google-generativeai==0.8.5
+googleapis-common-protos==1.70.0
+grpcio==1.71.0
+grpcio-status==1.71.0
+h11==0.14.0
+html_table_parser==0.1.0
+httpcore==1.0.5
+httplib2==0.22.0
+httpx==0.28.1
+huggingface-hub==0.30.1
+idna==3.10
+importlib_metadata==8.5.0
+importlib_resources @ file:///croot/importlib_resources-suite_1720641103994/work
+ipykernel==6.29.5
+ipython==8.18.1
+ipywidgets==8.1.5
+isoduration==20.11.0
+jedi==0.19.1
+Jinja2==3.1.4
+jiter==0.8.2
+joblib==1.4.2
+json5==0.9.25
+jsonlines @ file:///tmp/build/80754af9/jsonlines_1609785323125/work
+jsonpointer==3.0.0
+jsonschema==4.23.0
+jsonschema-specifications==2023.12.1
+jupyter==1.1.1
+jupyter-console==6.6.3
+jupyter-events==0.10.0
+jupyter-lsp==2.2.5
+jupyter_client==8.6.3
+jupyter_core==5.7.2
+jupyter_server==2.14.2
+jupyter_server_terminals==0.5.3
+jupyterlab==4.2.5
+jupyterlab_pygments==0.3.0
+jupyterlab_server==2.27.3
+jupyterlab_widgets==3.0.13
+kiwisolver @ file:///croot/kiwisolver_1672387140495/work
+lxml==5.3.0
+MarkupSafe==2.1.5
+matplotlib==3.9.2
+matplotlib-inline==0.1.7
+mistune==3.0.2
+mkl-service==2.4.0
+mkl_fft @ file:///io/mkl313/mkl_fft_1730824109137/work
+mkl_random @ file:///io/mkl313/mkl_random_1730823916628/work
+nbclient==0.10.0
+nbconvert==7.16.4
+nbformat==5.10.4
+nest-asyncio==1.6.0
+nltk==3.9.1
+notebook==7.2.2
+notebook_shim==0.2.4
+numexpr @ file:///croot/numexpr_1730215937391/work
+numpy==1.26.4
+openai==1.64.0
+overrides==7.7.0
+packaging==24.1
+pandas @ file:///croot/pandas_1732735089971/work/dist/pandas-2.2.3-cp39-cp39-linux_x86_64.whl#sha256=0a51ed2e81ab863e3d00ed6c5049192ce578ecb38fb467d2f9a6585d3c25f666
+pandocfilters==1.5.1
+parquet==1.3.1
+parso==0.8.4
+pexpect==4.9.0
+pillow @ file:///croot/pillow_1738010226202/work
+platformdirs==4.3.6
+ply==3.11
+prometheus_client==0.21.0
+prompt_toolkit==3.0.48
+proto-plus==1.26.1
+protobuf==5.29.5
+psutil==6.0.0
+ptyprocess==0.7.0
+pure_eval==0.2.3
+pyarrow @ file:///croot/pyarrow_1738229418212/work/python
+pyasn1==0.6.1
+pyasn1_modules==0.4.2
+pycparser==2.22
+pydantic==2.10.6
+pydantic_core==2.27.2
+Pygments==2.18.0
+pyparsing @ file:///croot/pyparsing_1731445506121/work
+PyQt6==6.7.1
+PyQt6_sip @ file:///croot/pyqt-split_1744804475988/work/pyqt_sip
+python-dateutil @ file:///croot/python-dateutil_1716495738603/work
+python-json-logger==2.0.7
+pytz @ file:///croot/pytz_1713974312559/work
+PyYAML==6.0.2
+pyzmq==26.2.0
+referencing==0.35.1
+regex==2024.9.11
+requests==2.32.3
+rfc3339-validator==0.1.4
+rfc3986-validator==0.1.1
+rpds-py==0.20.0
+rsa==4.9.1
+scipy==1.13.1
+Send2Trash==1.8.3
+sip @ file:///croot/sip_1738856193618/work
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+smart-open==7.0.4
+sniffio==1.3.1
+soupsieve==2.6
+stack-data==0.6.3
+terminado==0.18.1
+thriftpy2==0.5.2
+tiktoken==0.8.0
+tinycss2==1.3.0
+tomli @ file:///opt/conda/conda-bld/tomli_1657175507142/work
+tornado==6.4.1
+tqdm==4.66.5
+traitlets==5.14.3
+types-python-dateutil==2.9.0.20240906
+typing_extensions==4.12.2
+tzdata @ file:///croot/python-tzdata_1690578112552/work
+unicodedata2 @ file:///croot/unicodedata2_1736541023050/work
+uri-template==1.3.0
+uritemplate==4.1.1
+urllib3==2.2.3
+wcwidth==0.2.13
+webcolors==24.8.0
+webencodings==0.5.1
+websocket-client==1.8.0
+websockets==15.0.1
+widgetsnbextension==4.0.13
+wrapt==1.16.0
+zipp==3.20.2
