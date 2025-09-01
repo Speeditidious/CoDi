@@ -4,8 +4,6 @@ You are an agent specialized in editing the given narrative into the instructed 
 
 def build_edit_prompt_templetes(plan_mode=False, is_last_part=False, act_seq_mode=False, is_last_act=False, previous_context=None):
     edit_context_description = ""
-    if previous_context is not None:
-        edit_context_description += "* Previous Context. This is an edited narrative in which you have modified the earlier context of the simulated narrative."
     edit_context_description += "\n* Keep in mind. This is the entire simulated narrative."
     plan_description = "utility(narrative) represents the narrative goals intended to be achieved within this simulated narrative."
     if plan_mode:
@@ -46,7 +44,6 @@ Edit the **Simulated Narrative** into a {format} format via the following steps:
 1. Read the provided information to understand the simulated narrative:
 * Plan. The narrative is simulated according to the plan.
 {edit_context_description}
-* **Previous Context** is provided only to help you understand the earlier story. Do not include it in the output. You should output only the edited **Simulated Narrative**.
 * Note that, each character message is composed of speech (wrapped within "..."), action + emotion (wrapped within *...*), and inner thoughts (wrapped within [...]). The inner thoughts are not spoken aloud and are thus invisible to other characters.
 {format_instruction}
 
@@ -54,12 +51,7 @@ Edit the **Simulated Narrative** into a {format} format via the following steps:
 {plan_description}
 {plan_segment}
     """.strip()
-    
-    if plan_mode or act_seq_mode:
-        if previous_context is None:
-            raise Exception("Plan or Act Seq mode is on. But, previous context is not provided during Edit Phase")
-    if previous_context is not None:
-        final_prompt += f"\n\n## Previous Context\n{previous_context}"
+
     final_prompt += f"\n\n=== Simulated Narrative ===\n{story_segment}"
     
     return final_prompt
@@ -139,13 +131,7 @@ Edit the **Simulated Narrative** according to the provided Feedback. Follow the 
 {plan_segment}
     """.strip()
     
-    if plan_mode or act_seq_mode:
-        if previous_context is None:
-            raise Exception("Plan or Act Seq mode is on. But, previous context is not provided during Edit Phase")
-    if previous_context is not None:
-        final_prompt += f"\n\n## Previous Context\n{previous_context}"
     final_prompt += f"\n\n=== Simulated Narrative ===\n{story_segment}"
-    final_prompt += f"\n\n=== Future Context (partial) ===\n{future_context}"
     final_prompt += f"\n\n## Feedback\n{feedback}"
     
     return final_prompt
