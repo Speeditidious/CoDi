@@ -12,14 +12,13 @@ You are a planner agent. Plan the narrative or design characters and world setti
 
 INIT_SETUP_RULES_TEMPLETE = """
 1. Keep Types "character," "place," and "item" fixed. Additional entity types may be introduced only if necessary.
-2. Set up more than three characters, including at least one protagonist, one antagonist, and one side character, if possible.
-3. Select unique and distinctive proper nouns for naming entities to enhance clarity and uniqueness. Prefer concise, single-word names to make extraction easier. Avoid alias-based names.
-4. Clearly annotate each entity with concise, descriptive comments upon declaration.
-5. Incorporate all elements listed under **Story Prompt** into the "Entities" and "Initial State."
-6. Ensure all narrative goals mentioned in the **Story Prompt** are included in the "utility(narrative)." This includes every major plot point and the ending, if they are described in the **Story Prompt**.
-7. It is mandatory that every character has a utility function declared. The argument name must exactly match the character's name. Do not omit any character.
-8. Character utilities must be grounded entirely in the characters' own motivations, objectives, and viewpoints. They should not contain any narrative-level objectives.
-9. Provide only the finalized Initial Setup without additional commentary.
+2. Select unique and distinctive proper nouns for naming entities to enhance clarity and uniqueness. Prefer concise, single-word names to make extraction easier. Avoid alias-based names.
+3. Clearly annotate each entity with concise, descriptive comments upon declaration.
+4. Incorporate all elements listed under **Story Prompt** into the "Entities" and "Initial State."
+5. Ensure all narrative goals mentioned in the **Story Prompt** are included in the "utility(narrative)." This includes every major plot point and the ending, if they are described in the **Story Prompt**.
+6. It is mandatory that every character has a utility function declared. The argument name must exactly match the character's name. Do not omit any character.
+7. Character utilities must be grounded entirely in the characters' own motivations, objectives, and viewpoints. They should not contain any narrative-level objectives.
+8. Provide only the finalized Initial Setup without additional commentary.
 """.strip()
 
 def build_init_setup_prompt(story_prompt):

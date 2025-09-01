@@ -46,6 +46,7 @@ Edit the **Simulated Narrative** into a {format} format via the following steps:
 1. Read the provided information to understand the simulated narrative:
 * Plan. The narrative is simulated according to the plan.
 {edit_context_description}
+* **Previous Context** is provided only to help you understand the earlier story. Do not include it in the output. You should output only the edited **Simulated Narrative**.
 * Note that, each character message is composed of speech (wrapped within "..."), action + emotion (wrapped within *...*), and inner thoughts (wrapped within [...]). The inner thoughts are not spoken aloud and are thus invisible to other characters.
 {format_instruction}
 

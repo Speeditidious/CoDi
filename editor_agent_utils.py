@@ -75,15 +75,6 @@ def build_future_context_editor(gen_data, logger, args, part=0, act=0):
                 turn_narrative = gen_data['narrative'][f'part_{part_storytelling}'][f'act_{act_storytelling}'][f'turn_{turn_storytelling}']['story_progress']
                 if 'ENDS' in turn_narrative:
                     break
-                if args.hierarchical_mode:
-                    for t in turn_narrative.splitlines():
-                        if t.strip() == '':
-                            continue
-                        future_context_list.append(t.strip())
-                        if len(future_context_list) >= MAX_FUTURE_CONTEXT_TURN * 2:
-                            break
-                elif args.one_man_show_mode:
-                    future_context_list.extend([t.strip() for t in turn_narrative.splitlines() if t.strip() != ''])
                 else:
                     future_context_list.append(turn_narrative)
                 turn_storytelling += 1
@@ -99,15 +90,6 @@ def build_future_context_editor(gen_data, logger, args, part=0, act=0):
                 turn_narrative = gen_data['narrative'][f'part_{part_storytelling}'][f'turn_{turn_storytelling}']['story_progress']
                 if 'ENDS' in turn_narrative:
                     break
-                if args.hierarchical_mode:
-                    for t in turn_narrative.splitlines():
-                        if t.strip() == '':
-                            continue
-                        future_context_list.append(t.strip())
-                        if len(future_context_list) >= MAX_FUTURE_CONTEXT_TURN * 2:
-                            break
-                elif args.one_man_show_mode:
-                    future_context_list.extend([t.strip() for t in turn_narrative.splitlines() if t.strip() != ''])
                 else:
                     future_context_list.append(turn_narrative)
                 turn_storytelling += 1
@@ -214,7 +196,7 @@ def edit_simulated_narrative(gen_data, out_dataset, logger, args):
                     turn_storytelling += 1
                 act_story = '\n'.join(act_story_list)
                 
-                if len(act_story_list) <= 1 and not args.hierarchical_mode:
+                if len(act_story_list) <= 1:
                     gen_data['edited_narrative'][f'part_{part_storytelling}'][f'act_{act_storytelling}']['story_progress'] = ''
                     gen_data['edited_narrative'][f'part_{part_storytelling}'][f'act_{act_storytelling}']['story_progress_before_feedback'] = ''
                     act_storytelling += 1
